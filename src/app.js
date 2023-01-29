@@ -23,4 +23,9 @@ let when = [
 ];
 function generate() {
   console.log("it works");
+  console.log("hello?");
+}
+
+function randomize(array) {
+  return array[Math.floor(Math.random() * array.length)];
 }
