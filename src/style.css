@@ -1,3 +1,29 @@
 body {
-    background-color: brown;
+    background-color: bisque;
+    margin: 0 auto;
+    justify-content: center;
+}
+.central-div {
+    text-align: center;
+    margin-top: 300px;
+}
+.my-button {
+    margin-top: 50px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+.my-button:hover {
+    border-width: 2px;
+    background-color: rgb(106, 223, 106);
+    padding: 19px;
+}
+.my-button:active {
+    border-width: 4px;
+    padding: 17px;
 }
