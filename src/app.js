@@ -4,9 +4,10 @@ let who = [
   "The racoon from the neigborhood",
   "My dog",
   "My cat",
-  "My boss"
+  "My boss",
+  "Santa"
 ];
-let action = ["destroyed", "took away", "lost", "broke", "deleted"];
+let action = ["destroyed", "took away", "lost", "broke", "damaged"];
 let what = [
   "my homework",
   "my work computer",
@@ -17,15 +18,24 @@ let what = [
 let when = [
   "rigth before the class",
   "just before",
-  "after i finished",
-  "when i was not looking",
-  "while i was watching watching youtube"
+  "after I finished",
+  "when I was not looking",
+  "while I was watching watching youtube"
 ];
 function generate() {
   console.log("it works");
-  console.log("hello?");
+  let text = `${randomize(who)} ${randomize(action)} ${randomize(
+    what
+  )} ${randomize(when)}`;
+  console.log(text);
+  let myH1 = document.getElementById("my-excuse");
+  myH1.innerHTML = text;
 }
 
 function randomize(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
+
+window.addEventListener("load", event => {
+  generate();
+});
