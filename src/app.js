@@ -17,7 +17,7 @@ let what = [
 ];
 let when = [
   "rigth before the class",
-  "just before",
+  "just right now",
   "after I finished",
   "when I was not looking",
   "while I was watching watching youtube"
