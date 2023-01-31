@@ -23,11 +23,9 @@ let when = [
   "while I was watching watching youtube"
 ];
 function generate() {
-  console.log("it works");
   let text = `${randomize(who)} ${randomize(action)} ${randomize(
     what
   )} ${randomize(when)}`;
-  console.log(text);
   let myH1 = document.getElementById("my-excuse");
   myH1.innerHTML = text;
 }
@@ -38,4 +36,8 @@ function randomize(array) {
 
 window.addEventListener("load", event => {
   generate();
+
+  var select = document.getElementById("color-select");
+  var selectedOption = select.options[select.selectedIndex].value;
+  console.log(selectedOption);
 });

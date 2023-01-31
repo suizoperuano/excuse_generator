@@ -5,7 +5,9 @@ body {
 }
 .central-div {
     text-align: center;
-    margin-top: 300px;
+    position: relative;
+    top: 180px;
+    justify-content: center;
 }
 .my-button {
     margin-top: 50px;
@@ -17,6 +19,8 @@ body {
     border-width: 1px;
     background-color: lightgreen;
     border-radius: 10px;
+    position: relative;
+    top: 0px;
 }
 .my-button:hover {
     border-width: 2px;
